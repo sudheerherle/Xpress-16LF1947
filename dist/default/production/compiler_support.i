@@ -1,12 +1,12 @@
-# 1 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\sources\\c99\\pic\\compiler_support.c"
+# 1 "/home/installations/microchip/xc8/v2.40/pic/sources/c99/pic/compiler_support.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "D:/Installations/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\language_support.h" 1 3
+# 1 "/home/installations/microchip/mplabx/v6.00.07.6106/packs/Microchip/PIC12-16F1xxx_DFP/1.4.100/xc8/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\sources\\c99\\pic\\compiler_support.c" 2
+# 1 "/home/installations/microchip/xc8/v2.40/pic/sources/c99/pic/compiler_support.c" 2
 __persistent unsigned char __BTEMP12;
 __persistent unsigned char __BTEMP13;
 __persistent unsigned char __BTEMP14;

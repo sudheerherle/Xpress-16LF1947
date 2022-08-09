@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/debug\Xpress-16f1947.X.debug.hex">
+  <executable name="dist/default/production/Xpress-16LF1947.production.hex">
     <memory name="program">
       <units>words</units>
       <length>16384</length>
@@ -10,8 +10,8 @@
     <memory name="data">
       <units>bytes</units>
       <length>1024</length>
-      <used>21</used>
-      <free>1003</free>
+      <used>19</used>
+      <free>1005</free>
     </memory>
   </executable>
 </project>

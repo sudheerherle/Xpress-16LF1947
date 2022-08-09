@@ -30,11 +30,11 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>snap</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.31</languageToolchainVersion>
+        <languageToolchainVersion>2.40</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC12-16F1xxx_DFP" vendor="Microchip" version="1.2.63"/>
+        <pack name="PIC12-16F1xxx_DFP" vendor="Microchip" version="1.4.100"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>

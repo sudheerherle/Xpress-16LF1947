@@ -3,36 +3,36 @@
 [d edition pro ]
 [d chip 16LF1947 ]
 [d frameptr 6 ]
-"10 D:\Installations\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
+"10 /home/installations/microchip/xc8/v2.40/pic/sources/c99/common/sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"4 D:\Installations\Microchip\xc8\v2.31\pic\sources\c99\common\Umul8_16.c
+"4 /home/installations/microchip/xc8/v2.40/pic/sources/c99/common/Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"6 D:\Installations\Microchip\xc8\v2.31\pic\sources\c99\pic\__eeprom.c
+"6 /home/installations/microchip/xc8/v2.40/pic/sources/c99/pic/__eeprom.c
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"17 C:\Users\i14746\Desktop\Xpress-16f1947.X\newmain.c
+"19 /home/sudheer/projects/Xpress-16LF1947/newmain.c
 [v _main main `(i  1 e 2 0 ]
-"31
+"33
 [v _add add `(i  1 e 2 0 ]
-"17
-[v _main main `(i  1 e 2 0 ]
-{
-"24
-[v main@p p `i  1 a 2 4 ]
-"20
-[v main@f f `i  1 a 2 6 ]
 "19
-[v main@e e `i  1 a 2 2 ]
-"29
-} 0
+[v _main main `(i  1 e 2 0 ]
+{
+"26
+[v main@p p `i  1 a 2 2 ]
+"22
+[v main@f f `i  1 a 2 4 ]
+"21
+[v main@e e `i  1 a 2 0 ]
 "31
+} 0
+"33
 [v _add add `(i  1 e 2 0 ]
 {
-"32
+"34
 [v add@c c `i  1 a 2 4 ]
-"31
+"33
 [v add@a a `i  1 p 2 0 ]
 [v add@b b `i  1 p 2 2 ]
-"35
+"37
 } 0

@@ -4,7 +4,7 @@
 # 288 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "D:/Installations/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\language_support.h" 1 3
+# 1 "/home/installations/microchip/mplabx/v6.00.07.6106/packs/Microchip/PIC12-16F1xxx_DFP/1.4.100/xc8/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "newmain.c" 2
 
@@ -14,22 +14,21 @@
 
 
 
-# 1 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 1 3
+# 1 "/home/installations/microchip/xc8/v2.40/pic/include/c99/stdio.h" 1 3
 
 
 
-# 1 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 4 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 2 3
+# 1 "/home/installations/microchip/xc8/v2.40/pic/include/c99/musl_xc8.h" 1 3
+# 5 "/home/installations/microchip/xc8/v2.40/pic/include/c99/stdio.h" 2 3
 
 
 
 
 
-
-# 1 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\features.h" 1 3
-# 10 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 2 3
-# 24 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 3
-# 1 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 1 "/home/installations/microchip/xc8/v2.40/pic/include/c99/features.h" 1 3
+# 11 "/home/installations/microchip/xc8/v2.40/pic/include/c99/stdio.h" 2 3
+# 24 "/home/installations/microchip/xc8/v2.40/pic/include/c99/stdio.h" 3
+# 1 "/home/installations/microchip/xc8/v2.40/pic/include/c99/bits/alltypes.h" 1 3
 
 
 
@@ -41,20 +40,20 @@ typedef void * va_list[1];
 
 
 typedef void * __isoc_va_list[1];
-# 122 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+# 122 "/home/installations/microchip/xc8/v2.40/pic/include/c99/bits/alltypes.h" 3
 typedef unsigned size_t;
-# 137 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+# 137 "/home/installations/microchip/xc8/v2.40/pic/include/c99/bits/alltypes.h" 3
 typedef long ssize_t;
-# 168 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+# 168 "/home/installations/microchip/xc8/v2.40/pic/include/c99/bits/alltypes.h" 3
 typedef __int24 int24_t;
-# 204 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+# 204 "/home/installations/microchip/xc8/v2.40/pic/include/c99/bits/alltypes.h" 3
 typedef __uint24 uint24_t;
-# 246 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+# 246 "/home/installations/microchip/xc8/v2.40/pic/include/c99/bits/alltypes.h" 3
 typedef long long off_t;
-# 399 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+# 399 "/home/installations/microchip/xc8/v2.40/pic/include/c99/bits/alltypes.h" 3
 typedef struct _IO_FILE FILE;
-# 24 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 2 3
-# 52 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 3
+# 25 "/home/installations/microchip/xc8/v2.40/pic/include/c99/stdio.h" 2 3
+# 52 "/home/installations/microchip/xc8/v2.40/pic/include/c99/stdio.h" 3
 typedef union _G_fpos64_t {
  char __opaque[16];
  double __align;
@@ -107,28 +106,34 @@ char *gets(char *);
 int fputs(const char *restrict, FILE *restrict);
 int puts(const char *);
 
-#pragma printf_check(printf) const
-#pragma printf_check(vprintf) const
-#pragma printf_check(sprintf) const
-#pragma printf_check(snprintf) const
-#pragma printf_check(vsprintf) const
-#pragma printf_check(vsnprintf) const
-
+__attribute__((__format__(__printf__, 1, 2)))
 int printf(const char *restrict, ...);
+__attribute__((__format__(__printf__, 2, 3)))
 int fprintf(FILE *restrict, const char *restrict, ...);
+__attribute__((__format__(__printf__, 2, 3)))
 int sprintf(char *restrict, const char *restrict, ...);
+__attribute__((__format__(__printf__, 3, 4)))
 int snprintf(char *restrict, size_t, const char *restrict, ...);
 
+__attribute__((__format__(__printf__, 1, 0)))
 int vprintf(const char *restrict, __isoc_va_list);
 int vfprintf(FILE *restrict, const char *restrict, __isoc_va_list);
+__attribute__((__format__(__printf__, 2, 0)))
 int vsprintf(char *restrict, const char *restrict, __isoc_va_list);
+__attribute__((__format__(__printf__, 3, 0)))
 int vsnprintf(char *restrict, size_t, const char *restrict, __isoc_va_list);
 
+__attribute__((__format__(__scanf__, 1, 2)))
 int scanf(const char *restrict, ...);
+__attribute__((__format__(__scanf__, 2, 3)))
 int fscanf(FILE *restrict, const char *restrict, ...);
+__attribute__((__format__(__scanf__, 2, 3)))
 int sscanf(const char *restrict, const char *restrict, ...);
+
+__attribute__((__format__(__scanf__, 1, 0)))
 int vscanf(const char *restrict, __isoc_va_list);
 int vfscanf(FILE *restrict, const char *restrict, __isoc_va_list);
+__attribute__((__format__(__scanf__, 2, 0)))
 int vsscanf(const char *restrict, const char *restrict, __isoc_va_list);
 
 void perror(const char *);
@@ -171,15 +176,13 @@ char *ctermid(char *);
 
 
 char *tempnam(const char *, const char *);
-# 8 "newmain.c" 2
-
-# 1 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 1 3
-# 21 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 3
-# 1 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 18 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+# 9 "newmain.c" 2
+# 1 "/home/installations/microchip/xc8/v2.40/pic/include/c99/stdlib.h" 1 3
+# 21 "/home/installations/microchip/xc8/v2.40/pic/include/c99/stdlib.h" 3
+# 1 "/home/installations/microchip/xc8/v2.40/pic/include/c99/bits/alltypes.h" 1 3
+# 18 "/home/installations/microchip/xc8/v2.40/pic/include/c99/bits/alltypes.h" 3
 typedef long int wchar_t;
-# 21 "D:\\Installations\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
-
+# 22 "/home/installations/microchip/xc8/v2.40/pic/include/c99/stdlib.h" 2 3
 
 int atoi (const char *);
 long atol (const char *);
@@ -200,12 +203,23 @@ unsigned long long strtoull (const char *restrict, char **restrict, int);
 int rand (void);
 void srand (unsigned);
 
+void *malloc (size_t);
+void *calloc (size_t, size_t);
+void *realloc (void *, size_t);
+void free (void *);
+
           void abort (void);
 int atexit (void (*) (void));
           void exit (int);
           void _Exit (int);
 
 void *bsearch (const void *, const void *, size_t, size_t, int (*)(const void *, const void *));
+
+
+
+
+
+
 
 __attribute__((nonreentrant)) void qsort (void *, size_t, size_t, int (*)(const void *, const void *));
 
@@ -225,14 +239,7 @@ typedef struct { unsigned int quot, rem; } udiv_t;
 typedef struct { unsigned long quot, rem; } uldiv_t;
 udiv_t udiv (unsigned int, unsigned int);
 uldiv_t uldiv (unsigned long, unsigned long);
-
-
-
-
-
-size_t __ctype_get_mb_cur_max(void);
-# 9 "newmain.c" 2
-
+# 10 "newmain.c" 2
 
 
 
@@ -240,12 +247,14 @@ size_t __ctype_get_mb_cur_max(void);
 
 int add(int a,int b);
 
+#pragma config LVP = ON
+
 int main(int argc, char** argv) {
     int d = 12;
     int e = 15;
     int f = 0;
     f = add(d,e);
-    while(true){
+    while(1){
     f = f * 2;
     for(int p=0;p<10;p++){
         f = f + 1;
